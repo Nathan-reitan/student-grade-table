@@ -4,7 +4,7 @@ class GradeTable{
   }
   updateGrades(grades){
     this.tableElement.gradeTable;
-    destroyChildren;
+    destroyChildren();
     for (var i=0;i<grades.length;i++){
       var row = document.createElement("tr");
       var name = document.createElement("td");

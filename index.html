@@ -7,8 +7,18 @@
   <title>Student Grade Table</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
 </head>
-<header>
-  <h1>Student Grade Table</h1>
+<header id="header">
+  <div class="row">
+    <div class="col">
+    <h1>Student Grade Table</h1>
+    </div>
+    <div class="col">
+      <h1 class="col">
+        <span>Average Grade:</span>
+        <span class="badge badge-secondary"></span>
+      </h1>
+    </div>
+  </div>
 </header>
 <body>
   <table class="table table-striped">
@@ -24,6 +34,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script src="components/app.js"></script>
 <script src="components/grade-table.js"></script>
+<script src="components/page-header.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

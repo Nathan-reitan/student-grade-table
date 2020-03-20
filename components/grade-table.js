@@ -23,7 +23,5 @@ class GradeTable{
 }
 
 function destroyChildren(){
-  if(this.tableElement.hasChildNodes()){
-    this.tableElement.removeChild(this.tableElement.childNodes[0]);
-  }
+  this.tableElement.innerHTML="";
 }

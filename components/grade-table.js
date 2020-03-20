@@ -1,3 +1,7 @@
+function destroyChildren() {
+  table.innerHTML = "";
+}
+
 class GradeTable{
   constructor(tableElement){
     this.tableElement=tableElement;
@@ -20,8 +24,4 @@ class GradeTable{
     }
     console.log(grades);
   }
-}
-
-function destroyChildren(){
-  this.tableElement.innerHTML="";
 }

@@ -16,6 +16,7 @@ class GradeTable{
       var course = document.createElement("td");
       course.textContent=grades[i].course;
       var grade=document.createElement("td");
+      grade.setAttribute("class", "grade");
       grade.textContent=grades[i].grade;
       row.appendChild(name);
       row.appendChild(course);

@@ -4,7 +4,16 @@ class App{
   }
   handleGetGradesSuccess(grades){
     this.gradeTable.updateGrades(grades);
+    var scoreElements = document.querySelectorAll(".grade");
+    console.log(scoreElements);
+    var average = 0;
+    for (var i = 0; i < scoreElements.length; i++) {
+    var numerals = parseInt(scoreElements[i].textContent);
+    average += numerals;
   }
+    average = (average / grades.length);
+    this.pageHeader.updateAverage(average);
+}
   constructor(gradeTable, pageHeader){
     this.handleGetGradesError=this.handleGetGradesError.bind(this);
     this.handleGetGradesSuccess=this.handleGetGradesSuccess.bind(this);

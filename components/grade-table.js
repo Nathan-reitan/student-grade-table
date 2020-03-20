@@ -23,6 +23,5 @@ class GradeTable{
       row.appendChild(grade);
       this.tableElement.appendChild(row);
     }
-    console.log(grades);
   }
 }
